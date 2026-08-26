@@ -24,7 +24,8 @@ const SETTINGS_KEYWORDS = [
   "Task Timeout",
 ];
 
-const EXECUTABLE_SETTINGS_KEYWORDS = [
+// Settings that invoke keywords
+const INVOKING_SETTINGS_KEYWORDS = [
   "Suite Setup",
   "Suite Teardown",
   "Test Setup",
@@ -111,15 +112,15 @@ module.exports = grammar({
     setting_statement: ($) =>
       choice(
         seq(
-          field("name", $.executable_setting_name),
+          field("name", alias($._invoking_setting_name, $.setting_name)),
           optional($._whitespace),
           optional($.keyword_invocation),
           $._line_break
         ),
         seq(field("name", $.setting_name), $.arguments, $._line_break),
       ),
-    executable_setting_name: ($) =>
-      choice(...EXECUTABLE_SETTINGS_KEYWORDS.map(caseInsensitive)),
+    _invoking_setting_name: ($) =>
+      choice(...INVOKING_SETTINGS_KEYWORDS.map(caseInsensitive)),
     setting_name: ($) => choice(...SETTINGS_KEYWORDS.map(caseInsensitive)),
 
     //

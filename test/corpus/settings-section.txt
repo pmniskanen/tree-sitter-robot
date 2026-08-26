@@ -79,12 +79,12 @@ Task Timeout      5 minutes
           (argument
             (text_chunk))))
       (setting_statement
-        (executable_setting_name)
+        (setting_name)
         (keyword_invocation
           (keyword
             (name_chunk))))
       (setting_statement
-        (executable_setting_name)
+        (setting_name)
         (keyword_invocation
           (keyword
             (name_chunk))))
@@ -117,12 +117,12 @@ Task Timeout      5 minutes
           (argument
             (text_chunk))))
       (setting_statement
-        (executable_setting_name)
+        (setting_name)
         (keyword_invocation
           (keyword
             (name_chunk))))
       (setting_statement
-        (executable_setting_name)
+        (setting_name)
         (keyword_invocation
           (keyword
             (name_chunk))))
@@ -137,12 +137,12 @@ Task Timeout      5 minutes
           (argument
             (text_chunk))))
       (setting_statement
-        (executable_setting_name)
+        (setting_name)
         (keyword_invocation
           (keyword
             (name_chunk))))
       (setting_statement
-        (executable_setting_name)
+        (setting_name)
         (keyword_invocation
           (keyword
             (name_chunk))))

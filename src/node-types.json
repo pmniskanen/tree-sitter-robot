@@ -206,11 +206,6 @@
     }
   },
   {
-    "type": "executable_setting_name",
-    "named": true,
-    "fields": {}
-  },
-  {
     "type": "finally_statement",
     "named": true,
     "fields": {},
@@ -762,10 +757,6 @@
         "multiple": false,
         "required": true,
         "types": [
-          {
-            "type": "executable_setting_name",
-            "named": true
-          },
           {
             "type": "setting_name",
             "named": true
